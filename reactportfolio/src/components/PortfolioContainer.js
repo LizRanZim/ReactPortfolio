@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 import Header from './structure/Header';
-import Card from './structure/Card';
+import Project from './structure/Project';
 
 import Footer from './structure/Footer';
 import image from '../img/jpegpia23403.jpg';
@@ -43,7 +43,7 @@ return (
       return (
       <div>
       <Portfolio />
-      <Card/>
+      <Project/>
       </div>
       );
     }

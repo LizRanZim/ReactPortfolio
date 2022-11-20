@@ -1,21 +1,21 @@
 import React from 'react';
 import '../../styles/Mystyles.css';
+import pdf from '../../img/Resume.pdf'
 
 
-function Resume () {
-    return (
-        <div>
-      <h1 className='pageTitle'>Resume Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+function Resume() {
+  return (
+    <div className='m-3'>
+      <h1 className='pageTitle'>Resume & Skills</h1>
+      <h3> Download my resume: <a href={pdf} download>LizRZ</a> </h3>
+      <h5> Front End Skills:  </h5>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Handlebars</li>
+      <h5> Back End Skills:  </h5>
+      <li>Webpack</li>
+      <li>React</li>
     </div>
-    )
+  )
 }
 
 export default Resume;

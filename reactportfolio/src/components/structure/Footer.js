@@ -7,9 +7,23 @@ import '../../styles/Mystyles.css';
 
 function Footer() {
     return (
-        <header className='footer'>
-            <h3>GitHub | LinkedIn | Stack Overflow</h3>
-        </header>
+        <ul className="nav footer">
+      <li className="nav-item m-1">
+       
+           <h3><a href="https://github.com/LizRanZim/">GitHub</a></h3>
+        
+        </li>
+        <li className="nav-item m-1">
+       
+            <h3><a href ="https://www.linkedin.com/in/melindagates/">LinkedIn</a></h3>
+        
+        </li>
+        <li className="nav-item m-1">
+       
+        <h3><a href ="https://stackoverflow.com/users/19275801/lizranzim">Stack Overflow</a></h3>
+        
+        </li>
+        </ul>
     );
 }
 

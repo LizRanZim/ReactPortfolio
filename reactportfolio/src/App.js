@@ -1,7 +1,7 @@
 // import React from 'react';
 // import Navbar from './components/Navbar';
 // import Header from './components/Header';
-// import Card from './components/Card';
+// import Project from './components/Project';
 // import Footer from './components/Footer';
 // // import image from './img/jpegpia23403.jpg';
 
@@ -17,7 +17,7 @@
 //       >
 //       <Header />
 //       <Navbar />
-//       <Card />
+//       <Project />
 //       <Footer />
 //     </div>
 //   );

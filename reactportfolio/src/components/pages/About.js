@@ -1,21 +1,49 @@
 import React from 'react';
 import '../../styles/Mystyles.css';
+import image from '../../img/106918045.jpg';
 
 
 function About () {
     return (
         <div>
-      <h1 className='pageTitle'>About Page</h1>
+      <h1 className='pageTitle'>About Me</h1>
+      <div className='myContent'>
+        <img src={image} alt="Logo" width ="10%"/>
+        </div>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+        I am an ecommerce professional who loves to code and wanted to have a greater understanding of full stack web development technologies. This project is part of a full stack web developer bootcamp. I love to travel.
       </p>
+      
     </div>
     )
 }
 
 export default About;
+
+// Try this for styling: https://react-bootstrap.github.io/getting-started/introduction/
+
+
+// import Button from 'react-bootstrap/Button';
+// import Card from 'react-bootstrap/Card';
+
+// function About () {
+//   return (
+//       <div>
+//     <h1 className='pageTitle'>About Page</h1>
+    
+//     <Card style={{ width: '18rem' }}>
+//     <Card.Img variant="top" src="holder.js/100px180" />
+//     <Card.Body>
+//       <Card.Title>Card Title</Card.Title>
+//       <Card.Text>
+//         Some quick example text to build on the card title and make up the
+//         bulk of the card's content.
+//       </Card.Text>
+//       <Button variant="primary">Go somewhere</Button>
+//     </Card.Body>
+//   </Card>
+//   </div>
+// );
+// }
+
+// export default About;

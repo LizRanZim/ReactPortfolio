@@ -5,6 +5,7 @@
 // --fiery-rose: #f45b69;
 // --react-logo-blue: #61dafb */
 
+
 .header {
   background: #52489C;
   height: 150px;
@@ -22,7 +23,6 @@
   padding: 10px;
   text-align: center;
   color: #52489C ;
-
 }
 
 h4 {
@@ -34,12 +34,26 @@ h4 {
 .footer {
   background: #52489C;
   height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer a {
+  margin: 0;
+  padding-top: 15px;
+  color: #61dafb;
+  font-size: 16px;
+}
+
+.footer a:hover {
+   color: #FFFFFF;
+  
 }
 
 .footer h3 {
   margin: 0;
   padding-top: 15px;
-  text-align: center;
   color: #61dafb;
   font-size: 16px;
 }
@@ -64,4 +78,14 @@ h4 {
 p {
   /* top, right, bottom, left */
   padding: 10px;
+  text-align: center;
+}
+
+.myButton {
+  background: #61dafb;
+}
+
+.myContent {
+  display: flex;
+  justify-content: center;
 }

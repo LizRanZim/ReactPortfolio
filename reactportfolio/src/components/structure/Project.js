@@ -12,7 +12,7 @@ import '../../styles/Mystyles.css';
 
 
 const styles = {
-    card: {
+    project: {
         margin: 20,
         background: '#61dafb',
         textAlign: 'center',  
@@ -21,9 +21,9 @@ const styles = {
 
 };
 
-function Card() {
+function Project() {
     return (
-        <div style={styles.card}>
+        <div style={styles.project}>
             <div className='square border border-white border-5'>
                 <h4>Project 1</h4>
                 <p>This project used x, y, z technologies</p>
@@ -54,4 +54,4 @@ function Card() {
     );
 }
 
-export default Card;
+export default Project;
