@@ -1,0 +1,67 @@
+/* // --plump-purple: #52489C;
+// --true-blue: #4062BB;
+// --maximum-blue-green: #59C3C3;
+// --platinum: #ebebeb;
+// --fiery-rose: #f45b69;
+// --react-logo-blue: #61dafb */
+
+.header {
+  background: #52489C;
+  height: 150px;
+}
+
+.header h1 {
+  margin: 0;
+  padding-top: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 30px;
+}
+
+.pageTitle {
+  padding: 10px;
+  text-align: center;
+  color: #52489C ;
+
+}
+
+h4 {
+  text-align: center;
+  color: #f45b69;
+  font-weight: bold;
+}
+
+.footer {
+  background: #52489C;
+  height: 50px;
+}
+
+.footer h3 {
+  margin: 0;
+  padding-top: 15px;
+  text-align: center;
+  color: #61dafb;
+  font-size: 16px;
+}
+
+.myNav {
+  background: #f45b69;
+  color: #FFFFFF;
+  text-decoration: none;
+  height: 44px;
+  padding: 10px;
+ 
+
+}
+
+.myNav .inuse {
+  background: #61dafb;
+  color: #FFFFFF;
+  height: 40px;
+   
+  }
+
+p {
+  /* top, right, bottom, left */
+  padding: 10px;
+}

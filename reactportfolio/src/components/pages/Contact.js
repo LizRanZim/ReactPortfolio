@@ -1,0 +1,131 @@
+import React, { useState } from 'react';
+import '../../styles/Mystyles.css';
+// This code is from 20-16
+
+
+// This might be a better resource for a react contact form: https://medium.com/weekly-webtips/simple-react-contact-form-without-back-end-9fa06eff52d9
+// This might also be good: https://tailwindcss.com/docs/guides/create-react-app
+// https://tailwind-elements.com/snippets/tailwind/tailwindelements/3596172#html-tab-view
+
+
+
+// Here we import a helper function that will check if the email is valid
+import { checkPassword, validateEmail } from '../utils/helpers';
+
+function Contact() {
+  // Create state variables for the fields in the Contact
+  // We are also setting their initial values to an empty string
+  const [email, setEmail] = useState('');
+  const [userName, setUserName] = useState('');
+  // TODO: Create a password variable and a function "setPassword" using useState
+  const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either email, username, and password
+    // TODO: Add an else statement to the end that will set the password to the value of 'inputValue'
+
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'userName') {
+      setUserName(inputValue);
+    } else if (inputType === 'password') {
+      setPassword(inputValue);
+    }
+  };
+
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
+
+    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    if (!validateEmail(email) || !userName) {
+      setErrorMessage('Email or username is invalid');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
+    if (!checkPassword(password)) {
+      setErrorMessage(
+        `Choose a more secure password for the account: ${userName}`
+      );
+      return;
+    }
+
+    // If successful, we want to clear out the input after registration.
+    setUserName('');
+    // TODO: Set the password back to an empty string after the user clicks submit
+    setPassword('');
+
+    setEmail('');
+    alert(`Hello ${userName}`);
+  };
+
+  return (
+    <div>
+      <p>Hello {userName}</p>
+      <form className="form">
+        <input
+          value={email}
+          name="email"
+          onChange={handleInputChange}
+          type="email"
+          placeholder="email"
+        />
+        <input
+          value={userName}
+          name="userName"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="username"
+        />
+        {/* TODO Add another input field with a value, name, type, and placeholder of "password" */}
+        <input
+          value={password}
+          name="password"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="password"
+        />
+
+        
+        {/* TODO Add a `onChange` attribute with a value of `handleInputChange` */}
+        <button type="button" onClick={handleFormSubmit}>
+          Submit
+        </button>
+      </form>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default Contact;
+
+
+
+// function Contact () {
+//     return (
+//         <div>
+//       <h1 className='pageTitle'>Contact Page</h1>
+//       <p>
+//         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
+//         Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
+//         mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
+//         lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
+//         imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
+//         in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+//       </p>
+//     </div>
+//     )
+// }
+
+// export default Contact;
