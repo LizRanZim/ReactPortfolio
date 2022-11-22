@@ -15,42 +15,19 @@ const styles = {
     project: {
         margin: 20,
         background: '#61dafb',
-        textAlign: 'center',  
-    
+        textAlign: 'center',
+
     },
 
 };
 
-function Project() {
+function Project(props) {
     return (
-        <div style={styles.project}>
-            <div className='square border border-white border-5'>
-                <h4>Project 1</h4>
-                <p>This project used x, y, z technologies</p>
-            </div>
-            <div className='square border border-white border-5'>
-                <h4>Project 2</h4>
-                <p>This project used x, y, z technologies</p>
-            </div>
-            <div className='square border border-white border-5'>
-                <h4>Project 3</h4>
-                <p>This project used x, y, z technologies</p>
-            </div>
-            <div className='square border border-white border-5'>
-                <h4>Project 4</h4>
-                <p>This project used x, y, z technologies</p>
-            </div>
-            <div className='square border border-white border-5'>
-                <h4>Project 5</h4>
-                <p>This project used x, y, z technologies</p>
-            </div>
-            <div className='square border border-white border-5'>
-                <h4>Project 6</h4>
-                <p>This project used x, y, z technologies</p>
-            </div>
+        <div style={styles} className='square border border-white border-5'>
+            <img alt={props.name} src={props.img} />
+            <h4>{props.name}</h4>
+            <p>{props.description}</p>
         </div>
-
-
     );
 }
 
