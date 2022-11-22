@@ -28,6 +28,19 @@ function Contact() {
     }
   };
 
+const handleBlur = (e) => {
+     // First we check to see if the email is not valid. If so we set an error message to be displayed on the page.
+     if (!validateEmail(email)) {
+      setErrorMessage('Email is invalid');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+
+
+    }
+
+}
+
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
@@ -54,23 +67,24 @@ function Contact() {
 
     <form>
 
-      <div class="form-group m-3">
-        <label for="Name">Name</label>
+      <div className="form-group m-3">
+        <label htmlFor="Name">Name</label>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="Name"
           placeholder="Your Name Here"
         >
         </input></div>
 
-      <div class="form-group m-3">
-        <label for="email">Email address</label>
+      <div className="form-group m-3">
+        <label htmlFor="email">Email address</label>
         <input
           value={email}
-          class="form-control"
+          className="form-control"
           name="email"
           onChange={handleInputChange}
+          onBlur={handleBlur}
           type="email"
           placeholder="Your Email address here"
         >
@@ -78,24 +92,25 @@ function Contact() {
 
 
         </input></div>
+        {errorMessage && (
+        <div>
+          <p className="error-text text-danger">{errorMessage}</p>
+        </div>
+      )}
 
 
 
-      <div class="form-group m-3">
-        <label for="message">Message</label>
-        <textarea class="form-control" id="message" rows="3"></textarea>
+      <div className="form-group m-3">
+        <label htmlFor="message">Message</label>
+        <textarea className="form-control" id="message" rows="3"></textarea>
       </div>
 
 
-      <button type="button" class="btn btn-primary m-3 myButton" onClick={handleFormSubmit}>
+      <button type="button" className="btn btn-primary m-3 myButton" onClick={handleFormSubmit}>
         Submit
       </button>
 
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
+      
 
 
     </form>
