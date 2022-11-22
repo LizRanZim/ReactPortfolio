@@ -32,6 +32,8 @@ const handleBlur = (e) => {
      // First we check to see if the email is not valid. If so we set an error message to be displayed on the page.
      if (!validateEmail(email)) {
       setErrorMessage('Email is invalid');
+     } else if (validateEmail(email)) {
+        setErrorMessage('');
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
