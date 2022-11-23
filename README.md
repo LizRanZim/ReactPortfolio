@@ -11,6 +11,15 @@ Portfolio Page
 
 <img src=".\assets\ReactPortfolio.GIF" width="400"> 
 
+## Link to Deployed Application:
+https://lizranzim.github.io/ReactPortfolio/
+
+## Link to GitHub Repository:
+https://github.com/LizRanZim/ReactPortfolio
+
+## Notes: 
+I am currently employed and not looking for a job so I have uploaded a sample resume for the purposes of the project. Also I do not wish to link to my current LinkedIn profile, so I added the LinkedIn profile of a person I admire to the footer.
+
 ## Available Scripts
 
 In the project directory, you can run:
