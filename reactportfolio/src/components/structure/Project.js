@@ -12,10 +12,12 @@ import '../../styles/Mystyles.css';
 
 
 const styles = {
+    // put this in my styles css
     project: {
         margin: 20,
         background: '#61dafb',
         textAlign: 'center',
+        className: 'square border border-white border-5'
 
     },
 
@@ -23,9 +25,9 @@ const styles = {
 
 function Project(props) {
     return (
-        <div style={styles} className='square border border-white border-5'>
-            <img alt={props.name} src={props.img} />
+        <div style={styles.project}>
             <h4>{props.name}</h4>
+            <img alt={props.name} src={props.img} />
             <p>{props.description}</p>
         </div>
     );
