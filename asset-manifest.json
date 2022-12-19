@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/ReactPortfolio/static/css/main.a8181a28.css",
-    "main.js": "/ReactPortfolio/static/js/main.c3c6bb79.js",
+    "main.js": "/ReactPortfolio/static/js/main.2e905305.js",
     "static/media/WeatherDashboard.gif": "/ReactPortfolio/static/media/WeatherDashboard.87eb4f2330ebee7c6a3d.gif",
     "static/media/ViewAllCategories.GIF": "/ReactPortfolio/static/media/ViewAllCategories.ee9ab84f13278ad69efb.GIF",
     "static/media/Reactions.GIF": "/ReactPortfolio/static/media/Reactions.be4ed1ff7283774ccd32.GIF",
     "static/media/Resume.pdf": "/ReactPortfolio/static/media/Resume.f5ffe74f7818c57ff1bb.pdf",
+    "static/media/WikiCraft.GIF": "/ReactPortfolio/static/media/WikiCraft.5d7d020dc0a484e9f661.GIF",
     "static/media/jpegpia23403.jpg": "/ReactPortfolio/static/media/jpegpia23403.6e1d381cbb05b1a18fea.jpg",
     "static/media/Add_department.GIF": "/ReactPortfolio/static/media/Add_department.8a8bffe57d2feea6a951.GIF",
     "static/media/106918045.jpg": "/ReactPortfolio/static/media/106918045.3256e6100233ee0039bf.jpg",
@@ -13,10 +14,10 @@
     "index.html": "/ReactPortfolio/index.html",
     "static/media/github.svg": "/ReactPortfolio/static/media/github.22e65707326e3e1e37afd21c5334995a.svg",
     "main.a8181a28.css.map": "/ReactPortfolio/static/css/main.a8181a28.css.map",
-    "main.c3c6bb79.js.map": "/ReactPortfolio/static/js/main.c3c6bb79.js.map"
+    "main.2e905305.js.map": "/ReactPortfolio/static/js/main.2e905305.js.map"
   },
   "entrypoints": [
     "static/css/main.a8181a28.css",
-    "static/js/main.c3c6bb79.js"
+    "static/js/main.2e905305.js"
   ]
 }
