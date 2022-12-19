@@ -6,6 +6,7 @@ import image2 from '../../img/ViewAllCategories.GIF';
 import image3 from '../../img/Add_department.GIF';
 import image4 from '../../img/GeneratedHTML.GIF';
 import image5 from '../../img/Reactions.GIF';
+import image6 from '../../img/WikiCraft.GIF';
 
 
 function Portfolio() {
@@ -40,6 +41,12 @@ function Portfolio() {
       description: 'This is the back end configuration of a social networking site with the ability to create and manage users and thoughts, add and remove friends, and add and remove reactions to thoughts. It was built using MongoDB.',
       img: image5,
       githubURL: 'https://github.com/LizRanZim/NoSQLSocialNetwork'
+    },
+    {
+      name: 'WikiCraft',
+      description: 'Welcome to WikiCraft, your new favorite crafting game helper. This project was inspired from the minds of WikiDev, a team of like minded web developers and avid gamers made up of Liz RZ, Nelson Drozd, Alex Bellamy, Graham Johnson, and Kerri Sosinski',
+      img: image6,
+      githubURL: 'https://github.com/NelsonD93/Game-Recipes'
     }
   ]
 
